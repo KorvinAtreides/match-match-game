@@ -4,11 +4,11 @@ const constants = {
 
   shortDelay: 1050,
 
-  standartDelay: 1200,
+  standardDelay: 1200,
 
   longDelay: 2050,
 
-  databaseAdress: 'KorvinAtreides',
+  databaseAddress: 'matchDB',
 
   countBestPlayers: 10,
 };

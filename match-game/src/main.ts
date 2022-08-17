@@ -139,7 +139,7 @@ export default class Main {
       <option value="Signs" disabled selected>Select game card type</option>
       <option value="Birds">Birds</option>
       <option value="Dogs">Dogs</option>
-      <option value="Airplans">Airplanes</option>
+      <option value="Airplanes">Airplanes</option>
       <option value="Signs">Traffic Signs</option>
     `;
     settingsWrapper.append(cardSelection);

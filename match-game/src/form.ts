@@ -11,7 +11,7 @@ function displayDataValidity(input: HTMLElement, valid: Boolean) {
   validityImage.setAttribute('src', `./icons/validation-${valid ? 'yes' : 'not'}.png`);
 }
 
-function displayValididityButton(submitFormButton: HTMLElement, valid: Boolean) {
+function displayValidityButton(submitFormButton: HTMLElement, valid: Boolean) {
   if (valid) {
     submitFormButton.classList.remove('invalid');
     submitFormButton.removeAttribute('title');
@@ -140,7 +140,7 @@ export default class Form {
     });
     submitFormButton.addEventListener('mouseenter', () => {
       this.validity = this.validateForm();
-      displayValididityButton(submitFormButton, this.validity);
+      displayValidityButton(submitFormButton, this.validity);
     });
     cancelFormButton.addEventListener('click', () => {
       this.hideForm();
@@ -285,7 +285,7 @@ export default class Form {
       this.showForm();
       const userFormTitle = document.querySelector('.user-form--title');
       userFormTitle.innerHTML = title;
-    }, constants.standartDelay);
+    }, constants.standardDelay);
   }
 
   deleteForm() {

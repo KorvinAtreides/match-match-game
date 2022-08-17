@@ -11,12 +11,12 @@ function idbOK() {
 export default class Database {
   status: string;
 
-  async add(user: User, adress: string, gameScore?: string) {
+  async add(user: User, address: string, gameScore?: string) {
     const db: IDBDatabase = await this.openRequestToDB();
-    const transaction = db.transaction([`${adress}`], 'readwrite');
-    const store = transaction.objectStore(`${adress}`);
+    const transaction = db.transaction([`${address}`], 'readwrite');
+    const store = transaction.objectStore(`${address}`);
     let request: IDBRequest<IDBValidKey>;
-    if (adress === 'games') {
+    if (address === 'games') {
       const game: GameResult = {
         firstName: user.firstName,
         lastName: user.lastName,
@@ -102,7 +102,7 @@ export default class Database {
 
   openRequestToDB() {
     const dbPromise = new Promise<IDBDatabase>((resolve, reject) => {
-      const openRequest = indexedDB.open(constants.databaseAdress);
+      const openRequest = indexedDB.open(constants.databaseAddress);
       this.status = 'pending';
       let database: IDBDatabase;
       openRequest.onupgradeneeded = () => {

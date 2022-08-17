@@ -229,8 +229,8 @@ export default class Game {
   endGame(timeSec: number) {
     this.timer.stopped = true;
     const deltaMatches = this.countMatches - this.countWrongMatches;
-    const fieldDimansion = (deltaMatches * 2) ** 0.5;
-    let score = (deltaMatches * 100 - timeSec * 10) * fieldDimansion;
+    const fieldDimension = (deltaMatches * 2) ** 0.5;
+    let score = (deltaMatches * 100 - timeSec * 10) * fieldDimension;
     score = score < 0 ? 0 : score;
     this.score = score;
     const statistics: Statistics = {
@@ -256,14 +256,14 @@ export default class Game {
     const creator = new ElementCreator();
     const aside = creator.appendNewElement(document.body, 'aside', 'aside-wrapper');
     aside.classList.add('invisible');
-    creator.appendNewElement(aside, 'div', 'congrat--back');
-    const congratFront = creator.appendNewElement(aside, 'form', 'congrat--front');
-    congratFront.style.transform = 'scale(0.3)';
-    const title = creator.appendNewElement(congratFront, 'h2', 'congrat--title');
+    creator.appendNewElement(aside, 'div', 'congrats--back');
+    const congratsFront = creator.appendNewElement(aside, 'form', 'congrats--front');
+    congratsFront.style.transform = 'scale(0.3)';
+    const title = creator.appendNewElement(congratsFront, 'h2', 'congrats--title');
     title.textContent = 'Congratulations!!!';
-    const subtitle = creator.appendNewElement(congratFront, 'h2', 'congrat--subtitle');
+    const subtitle = creator.appendNewElement(congratsFront, 'h2', 'congrats--subtitle');
     subtitle.textContent = 'Some Statistics:';
-    const statWrapper = creator.appendNewElement(congratFront, 'ul', 'congrat--stat-wrapper');
+    const statWrapper = creator.appendNewElement(congratsFront, 'ul', 'congrats--stat-wrapper');
     statWrapper.innerHTML = `
       <li>Your Name: <span>${User.currentUser.firstName} ${User.currentUser.lastName}</span></li>
       <li>All Cards: <span>${statistics.allCards}</span></li>
@@ -272,16 +272,16 @@ export default class Game {
       <li>Time: <span>${statistics.time} seconds</span></li>
       <li>Your Score: <span>${statistics.userScore}</span></li>
     `;
-    const finishButton = creator.appendNewElement(congratFront, 'button', 'congrat--button');
+    const finishButton = creator.appendNewElement(congratsFront, 'button', 'congrats--button');
     finishButton.setAttribute('type', 'button');
     finishButton.textContent = 'OK';
     aside.classList.remove('invisible');
     document.body.classList.add('notScrollable');
     setTimeout(() => {
-      congratFront.style.transform = 'scale(1)';
+      congratsFront.style.transform = 'scale(1)';
     }, constants.instantDelay);
     finishButton.onclick = () => {
-      congratFront.style.transform = 'scale(0.3)';
+      congratsFront.style.transform = 'scale(0.3)';
       setTimeout(() => {
         aside.classList.add('invisible');
         document.querySelector('body').classList.remove('notScrollable');
