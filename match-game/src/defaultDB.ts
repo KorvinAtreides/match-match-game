@@ -5,35 +5,40 @@ const defaultDB: Array<GameResult> = [
     firstName: 'Nicci',
     lastName: 'Troiani',
     email: 'nicci.ticky@gmail.com',
-    avatarUrl: 'https://im0-tub-by.yandex.net/i?id=d827a0f1a90ded60892d958f3babc108&n=13',
+    avatarUrl:
+      'https://sun9-63.userapi.com/impg/utWq9zhXmW7kjw329id4ClHNuEfk0AGARvGA9Q/FPh4fmEBktk.jpg?size=130x130&quality=96&sign=1ee93a79eedb6a799601edcda8ae3bff&type=album',
     score: '4840',
   },
   {
     firstName: 'Jane',
     lastName: 'Doe',
     email: 'jane.doe@aol.com',
-    avatarUrl: 'https://im0-tub-by.yandex.net/i?id=a10e0d9c8c1ef6b51302eb2a627d464a&n=13',
+    avatarUrl:
+      'https://sun9-48.userapi.com/impg/AfZi-DLeq6qEN_9ZTB2G3JttLVv3gBODwGG9Ow/pCY0X9FShoM.jpg?size=130x129&quality=96&sign=f9af1900d093a8e836848fcc93c58223&type=album',
     score: '8480',
   },
   {
     firstName: 'Katrin',
     lastName: 'Shwalts',
     email: 'katty.cat@yahoo.com',
-    avatarUrl: 'https://im0-tub-by.yandex.net/i?id=12d0d355360c4ea66571a52fe4614693&n=13',
+    avatarUrl:
+      'https://sun9-7.userapi.com/impg/9oX-jpjbxow7IEth-_Ea5ThhdcF3g9_B-Tf_kA/Y69Orb0o5jE.jpg?size=107x130&quality=96&sign=41147675013a23d99567581509970f5c&type=album',
     score: '10800',
   },
   {
     firstName: 'Ann',
     lastName: 'Semlani',
     email: 'anny.sem@fit.lv',
-    avatarUrl: 'https://im0-tub-by.yandex.net/i?id=2acd2dc605589f852405024b19e400ee&n=13',
+    avatarUrl:
+      'https://sun9-19.userapi.com/impg/B5xZAlqG8-7CE-dlWnbWOG08E-SRRfzKUjr81w/NDAuVJKfigQ.jpg?size=130x106&quality=96&sign=9f4c80526593bd3900a2f154d4de23c3&type=album',
     score: '2400',
   },
   {
     firstName: 'Ilon',
     lastName: 'Mask',
     email: 'spacex.program@gmail.com',
-    avatarUrl: 'https://img.joinfo.com/i/2020/03/800x0/5e6654d39a096.jpg',
+    avatarUrl:
+      'https://sun9-14.userapi.com/impg/_il5AL2dXSUk2-5WaHKR3N-3U6ExBokOKtYPoA/B0Qoz4mV-i4.jpg?size=604x402&quality=96&sign=86c0b4b5d7debe8ea28f27c747b24eb9&type=album',
     score: '12200',
   },
   {
@@ -45,10 +50,11 @@ const defaultDB: Array<GameResult> = [
     score: '10140',
   },
   {
-    firstName: 'Garold',
+    firstName: 'Harold',
     lastName: 'Hide The Pain',
-    email: 'garold.pain@gmail.com',
-    avatarUrl: 'https://pbs.twimg.com/media/D4Rg-F-WsAAAaK5.jpg:large',
+    email: 'harold.pain@gmail.com',
+    avatarUrl:
+      'https://sun9-59.userapi.com/impg/ju_qnC7Akr2OzIzEd5DyL_3Mi-hJ5_nBJwuUjg/5c4lNcqPqn8.jpg?size=604x423&quality=96&sign=182605047f3691bc45ef3257344926e1&type=album',
     score: '840',
   },
   {
