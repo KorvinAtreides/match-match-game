@@ -20,7 +20,7 @@ export default class Timer {
     this.stopped = false;
   }
 
-  tick() {   
+  tick() {
     if (!this.value) {
       this.reverse = false;
     }
