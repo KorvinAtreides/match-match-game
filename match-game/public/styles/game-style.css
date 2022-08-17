@@ -1,0 +1,117 @@
+.game--wrapper {
+  position: relative;
+  width: 100%;
+  min-height: calc(100vh - 200px);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: rgba(100, 100, 100, 0.3);
+}
+.game--timer {
+  display: block;
+  width: 200px;
+  height: 100px;
+  margin: 10px auto;
+}
+.game--field-wrapper {
+  display: grid;
+  width: 100%;
+  max-width: 900px;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px auto;
+}
+.item-wrapper {
+  position: relative;
+  width: 100px;
+  height: 140px;
+  margin-bottom: 10px;
+  border: 1px dashed black;
+  border-radius: 5px;
+  perspective: 200px;
+}
+.item-img {
+  position: absolute;
+  max-width: 100%;
+  transition: transform 0.5s ease-in-out;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+.item-card {
+  top: 15%;
+}
+.item-img:hover {
+  cursor: pointer;
+}
+.shield {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+  background-color: transparent;
+  transition: background-color 0.5s linear;
+}
+.congrat--back {
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.congrat--front {
+  position: fixed;
+  z-index: 40;
+  top: calc(50% - (350px / 2));
+  left: calc(50% - (500px / 2));
+  width: 500px;
+  height: 350px;
+  background-color: white;
+  transition: transform 1s ease-in-out;
+  transform: scale(1);
+}
+.congrat--title {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+.congrat--subtitle,
+.congrat--stat-wrapper {
+  display: block;
+  width: calc(100% - 50px);
+  margin-top: 30px;
+  margin-left: 50px;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: left;
+}
+.congrat--stat-wrapper {
+  list-style-type: disc;
+  font-size: 18px;
+}
+.congrat--stat-wrapper li {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+  width: 80%;
+}
+.congrat--stat-wrapper li span {
+  font-size: 18px;
+  font-weight: 600;
+}
+.congrat--button {
+  margin-top: 30px;
+  margin-left: 50px;
+  padding: 5px 10px;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: aqua;
+  border-radius: 5px;
+}
