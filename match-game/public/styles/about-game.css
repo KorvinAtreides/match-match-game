@@ -1,0 +1,47 @@
+.about-game--wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  max-width: 1920px;
+  min-height: calc(100vh - 200px);
+  margin: 0 auto;
+  padding-bottom: 100px;
+  background-color: rgba(100, 100, 100, 0.3);
+}
+.about-game--title {
+  display: block;
+  width: calc(100% - 100px);
+  margin-top: 40px;
+  margin-left: 100px;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: left;
+}
+.about-game--rule-wrapper {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  justify-content: space-between;
+  width: calc(100% - 100px);
+  margin: 15px 50px;
+}
+.about-game--rule {
+  height: 200px;
+  background-color: white;
+}
+.about-game--rule.example {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+}
+.rule--img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.about-game--text {
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size: 18px;
+}
